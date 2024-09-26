@@ -59,13 +59,3 @@ Gerenciabilidade:
     2. Usando uma interface de linha de comando
     3. Usando APIs
     4. Usando o PowerShell
-
-## Benefífios da Nuvem Azure - Revisão
-  - 
-
-
-
-## Materiais de Apoio
-
-
-
