@@ -59,3 +59,51 @@ Gerenciabilidade:
     2. Usando uma interface de linha de comando
     3. Usando APIs
     4. Usando o PowerShell
+
+## Tipos de Serviço de Nuvem na Azure
+ - IaaS, PaaS e SaaS
+
+### IaaS, PaaS e SaaS na Azure
+ - IaaS - Infraestrutura como Serviço
+   1. Recursos/Serviços que nós como clientes temos mais acesso.
+   2. Manutenção é geralmente feita por nós(como cliente).
+   3. Crie uma infraestrutura de TI de pagamento conforme o uso alugando servidores, máquinas virtuais, armazenamento, redes e sistemas operacionais de um provedor de nuvem.
+
+ - PaaS - Plataforma como Serviço
+   1. Um nível acima de IaaS
+   2. Fornece um ambiente para a criação, o teste e a implantação de aplicativos de software, sem focar no gerenciamento da infraestrutura subjacente.
+
+ - SaaS - Software as a Service
+   1. Um nível acima de PaaS
+   2. Os usuários se conectam e usam aplicativos com base em nuvem pela Internet: ex.: Microsoft Office 365, email e calendários
+   3. Os níveis anteriores não é de responsabilidade do cliente
+   
+### Modelo de Responsabilidade Compartilhada
+
+| Tipo de Responsabilidade | Responsabilidade | SaaS | PaaS | IaaS | No local |
+|---|------------------|------|------|------|----------|
+|A responsabilidade é sempre retida pelo cliente | Informações e dados | Cliente | Cliente | Cliente | Cliente |
+| # | Dispositivos (móveis e PCs) | Cliente | Cliente | Cliente | Cliente |
+| # | Contas e identidades | Cliente | Cliente | Cliente | Cliente |
+|A responsabilidade varia conforme o tipo | Infraestrutura de identidade e diretório | Ambos | Ambos | Cliente | Cliente |
+| # | Aplicativos | Microsoft | Ambos | Cliente | Cliente |
+| # | Controles de Rede | Microsoft | Ambos | Cliente | Cliente |
+| # | Sistema Operacional | Microsoft | Microsoft | Cliente | Cliente |
+| Transferências de responsabilidade para provedores de nuvem | Hosts físicos | Microsoft | Microsoft | Microsoft | Cliente
+| # | Rede Física | Microsoft | Microsoft | Microsoft | Cliente |
+| # | Datacenter Físico |  Microsoft | Microsoft | Microsoft | Cliente |
+
+### IaaS
+ - O Serviço de nuvem mais flexível
+ - Você configura e gerencia o hardware para seu aplicativo
+ - Maior Gestão
+
+### PaaS
+ - Focado no desenvolvimento de aplicativos
+ - O gerenciamento de plataforma é realizado pelo provedor de nuvem
+ - Intermediário em termos de gestão
+
+### SaaS
+ - Modelo de preço de pagamento conforme o uso
+ - Os usuários pagam pelo software que utilizam em um modelo de assinatura
+ - Menor Gestão
