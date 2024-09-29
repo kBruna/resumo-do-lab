@@ -202,3 +202,23 @@ O ExpressRoute estende as redes locais para o Azure por meio de uma conexão pri
   - As redes virtuais personalizáveis permitem que você use nomes de domínio privados e totalmente personalizados em suas redes virtuais privadas.
   - Os registros de alias dão suporte a conjuntos de registros de alias para apontar diretamente para um recurso do Azure.
 
+### Laboratório
+  - Máquina Virtual do Azure:
+      1. Assinatura e Grupo de Recursos
+      2. Nome da máquina
+      3. Região (Já aparece uma região padrão)
+      4. Opções de Disponibilidade: Conjunto de Dimensionamento de máquinas virtuais
+      5. Conjunto de Dimensionamento de Máquinas Virtuais: Criar novo
+      6. Modo de Dimensionamento: Dimensionamento Automático
+      7. Excluir com VM: Evitar Discos Órfãos.
+      8. Interface de Rede: Rede Virtual é criado uma caso não exista. Precisam estar na mesma região.
+      9. Selecione portas de entradas: Selecionar quais IPs conseguem acessar a MV.
+      10. Excluir o IP público e a NIC quando a VM for excluida.
+      11. Desligamento Automático: Pode ser ajustado horário e notificações para o usuário.
+      12. Habilitar Backup
+    - Área Virtual do Azure:
+      1. Host Pessoal: Individual/Utilização Específica.
+      2. Host Pool: Pode ser utilizado por vários usuários.
+    - Aplicativos de Função:
+      1.  Código ou Contêiner
+      2.  Pilha de Runtime: Linguagem de programação, o Sistema Operacional será selecionado automaticamente.
