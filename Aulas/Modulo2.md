@@ -300,12 +300,43 @@ O ExpressRoute estende as redes locais para o Azure por meio de uma conexão pri
   - Sincroniza os arquivos do Azure e locais de forma bidirecional
   - A camada de nuvem mantém os arquivos acessados com frequência no local, enquanto libera espaço
 
-
-
-
-
-
-
-
-
-
+## Laboratório
+Contas de Armazenamento:
+  - Criação
+    1. Assinatura: Automático
+    2. Grupo de Recursos
+    3. Nome exclusivo na Terra: 3 a 24 caracteres minusculos e números
+    4. Região
+    5. Desempenho: Standard (Uso Geral) ou Premium (Mais caro, para cenários que exigem baixa latência)
+    6. Redundância: LRS / GRS / ZRS / GZRS
+    7. Armazenamento de Blobs: Quente / Frio
+  - Novo compartilhamento de Arquivos:
+    1. Nome
+    2. Camada: Transação Otimizada / Quente / Frio
+    3. Backup
+  - Conectar:
+    1. Letra de Unidade
+    2. Método de autenticação: Active Directoru ou Microsoft Entra / Chave de conta de armazenamento
+    3. Script: Pode ser gerado para Windows / Linux / MacOS
+    4. Conexão: Porta TCP 445, Protocolo SMB
+  - Migração para o Azure:
+    1. Explorar mais cenários
+    2. Criar projeto
+    3. Detalhes do projeto: Nome
+    4. Detalhes do projeto: Geografia
+    5. Avançado: Método de conectividade: Ponto de extremidade público
+    6. Criar
+  - AzCopy (Unidirecional):
+    1. Funciona para outros sistemas operacionais
+    2. Necessita ter um Storage Account
+    3. Criar um contêiner
+    4. Tokens de acesso compartilhado: Permissões (Todos)
+    5. Gerar tokens SAS: Copiar URL SAS do blob
+    6. Pelo Prompt de Comando: Dentro da pasta do AzCopy `azcopy copy "/path/to/dir" https://[account].blob.core.windows.net/[container]/[path/to/directory]?[SAS]" --recursive=true`
+    7. Arquivos serão copiados para dentro do contêiner do Azure
+  - Gerenciador de Armazenamento do Microsoft (Storage Explorer):
+    1. Funciona para outros sistemas operacionais
+    2. Baixar e instalar
+    3. Selecionar um Ambiente do Azure
+    4. Assinatura: Selecionar Azure
+    5. Autenticar no navegador
