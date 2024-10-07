@@ -1,6 +1,6 @@
 # Modulo 2: Arquitetura e serviços do Azure
 
-##Roteiro de Aprendizagem
+## Roteiro de Aprendizagem
 - Componentes de arquitetura do Azure
   1. Regiões e zonas de disponibilidade
   2. Assinaturas e grupos de recursos
@@ -222,3 +222,11 @@ O ExpressRoute estende as redes locais para o Azure por meio de uma conexão pri
     - Aplicativos de Função:
       1.  Código ou Contêiner
       2.  Pilha de Runtime: Linguagem de programação, o Sistema Operacional será selecionado automaticamente.
+
+---------------
+
+## Armazenamento
+### Roteiro de Aprendizagem
+  - Serviços de Armazenamento
+  - Opções de redundância
+  - Gerenciamento e migração de arquivos 
