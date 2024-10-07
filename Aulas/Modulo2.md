@@ -230,3 +230,82 @@ O ExpressRoute estende as redes locais para o Azure por meio de uma conexão pri
   - Serviços de Armazenamento
   - Opções de redundância
   - Gerenciamento e migração de arquivos 
+  - Comparar os serviços de armazenamento do Azure
+  - Descrever as camadas de armazenamento
+  - Descrever as opções de redundância
+  - Descrever as opções de conta de armazenamento e os tipos de armazenamento
+  - Identificar opções para mover arquivos, incluindo o AzCopy, o Gerenciados de Armazenamento do Azure e a Sincronização de Arquivos do Azure
+  - Descrever as opções de migração, incluindo as Migrações para Azure e o Azure Data Box
+
+### Contas de Armazenamento
+  - Deve ter um nome globalmente exclusivo
+  - Fornecer acesso à Internet em todo o mundo
+  - Determinar os serviços de armazenamento e as opções de redundância
+
+### Redundância de Armazenamento
+|Configuração de Redundância | Implantação | Durabilidade |
+|----------------------------|-------------|--------------|
+|LRS (Armazenamento com redundância local) | Datacenter individual na região primária | 11 Noves |
+| ZLS (Armazenamento com redundância de zona) | Três zonas de disponibilidade na região primária | 12 Noves |
+| GRS (Armazenamento com redundância geográfica) | Datacenter único no primário e região secundária | 16 Noves |
+| GZRS (Armazenamento com redundância de zona geográfica) | Três zonas de disponilidade na região primária e um único datacenter na região secundária | 16 Noves |
+
+## Redundância e Serviços de Armazenamento
+
+**Serviços de armazenamento do Azure:**
+  - **Blob do Azure:** Otimizado para o armazenamento de quantidades massivas de dados não estruturados, como texto ou dados binários.
+  - **Disco do Azure:** Fornece discos para máquinas virtuais, aplicativos e outros serviços acessarem e utilizarem.
+  - **Fila do Azure:** Serviço de armazenamento de mensagens que fornece armazenamento e recuperação para grandes quantidades de mensagens, cada uma com até 64 KB.
+  - **Arquivos do Azure:** Configura um compartilhamento de arquivos de rede altamente disponível que pode ser utilizado usando o protocolo Bloco de Mensagens do Servidor.
+  - **Tabelas do Azure:** Fornece uma opção de chave/atributo para o armazenamento de dados estruturados não relacionais com um design sem esquema.
+
+## Pontos de Extremidades Públicos e Camadas de Acesso
+|Serviço de Armazenamento | Ponto de Extremidade Público |
+|-------------------------|------------------------------|
+|Armazenamento de Blobs | `https://<storage-account-name>.blob.core.windows.net` |
+|Data Lake Storage Gen2 | `https://<storage-account-name>.dfs.core.windows.net` |
+|Arquivos do Azure | `https://<storage-account-name>.file.core.windows.net` |
+|Armazenamento de filas | `https://<storage-account-name>.queue.core.windows.net` |
+|Armazenamento de Tabelas | `https://<storage-account-name>.table.core.windows.net` |
+
+*Via de regra, o primeiro nome é sempre o nome do recurso.*
+
+**Camadas de Acesso de Armazenamento do Azure**
+|Frequente | Esporádico | Frio | Arquivo Morto |
+|----------|------------|------|---------------|
+|Otimizada para armazenamento de dados acessados com frequência. | Otimizada para armazenamento de dados acessados com pouca frequência e armazenados por pelo menos 30 dias. | Otimizado para o armazenamento de dados acessados com pouca frequência e armazenados por pelo menos 90 dias. | Otimizada para armazenamento de dados acessados raramente e armazenados por pelo menos 180 dias com requisitos de latência flexíveis. |
+
+## Migrações para o Azure
+  - Plataforma de migração unificada
+  - Intervalo de ferramentas integradas e autônomas
+  - Avaliação e migração
+  - **Azure Data Box:** Até 80 Terabytes de dados de uma só vez.
+    1. Armazenar até 80 terabytes de dados.
+    2. Mova os backups de recuperação de desastre para o Azure
+    3. Proteja seus dados em uma caixa robusta durante o trânsito
+    4. Migre dados do Azure para conformidade ou necessidades regulatórias
+    5. Migre dados para o Azure de locais remotos com conectividade limitada ou sem conectividade
+
+## Opções de Gerenciamento de Arquivos
+### AzCopy
+  - Utilitário de linha de comando
+  - Copiar blobs ou arquivos de/para sua conta de armazenamento
+  - Sincronização em uma direção
+
+### Gerenciador de Armazenamento do Azure
+  - Interface gráfica do usuário (de modo semelhante ao Windows Explorer)
+  - Compatível com o Windows, MacOS e Linux
+
+### Sincronização de Arquivos do Azure
+  - Sincroniza os arquivos do Azure e locais de forma bidirecional
+  - A camada de nuvem mantém os arquivos acessados com frequência no local, enquanto libera espaço
+
+
+
+
+
+
+
+
+
+
