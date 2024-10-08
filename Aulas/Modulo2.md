@@ -340,3 +340,110 @@ Contas de Armazenamento:
     3. Selecionar um Ambiente do Azure
     4. Assinatura: Selecionar Azure
     5. Autenticar no navegador
+
+-------------
+
+## Identidade, Acesso e Segurança
+
+### Identidade, Acesso e Segurança
+#### Roteiro de Aprendizagem
+  - Serviços de diretório
+  - Métodos de autenticação
+  - Modelos de segurança
+
+#### Identidade, acesso e segurança: Domínio de Objetivo
+  - Descrever os serviços de diretório no Azure, incluindo o Microsoft Entra ID e o Microsoft Entra Domain Services
+  - Descrever métodos de autenticação no Azure, incluindo SSO (logon único), MFA (autenticação multifator) e sem senha
+  - Descrever as identidades externas e o acesso de convidado no Azure
+  - Descrever o Acesso Condicional do Entra
+  - Descrever o controle de acesso baseado em função (RBAC)
+  - Descrever o conceito de Confiança Zero (Confiar Desconfiando)
+  - Descrever a finalidade do modelo de defesa em profundidade (Modelo Cebola - proteção em camadas)
+  - Descrever a finalidade do Microsoft Defender para Nuvem (Cloud Native - Totalmente personalizável)
+
+### Microsoft Entra ID e Domain Services
+#### ID do Microsoft Entra
+O Microsoft Entra ID é o serviço de gerenciamento de identidades e acesso baseado em nuvem do Microsoft Azure.
+  - Autenticação (os funcionários entram para acessar os recursos)
+  - Login único (SSO)
+  - Gerenciamento de aplicativos
+  - Negócios para Negócios (B2B)
+  - Gerenciamento de dispositivos
+
+**Microsoft Entra Domain Services**
+  - Obtenha os benefícios dos serviços de domínio baseados em nuvem sem gerenciar os controladores de domínio
+  - Execute aplicativos herdados (que não podem utilizar os padrões de autenticação modernos) na nuvem
+  - Sincronizar automaticamente a partir do Microsoft Entra ID
+
+### Autenticação e Autorização
+#### Comparar a Autenticação e a Autorização
+**Autenticação:**
+  - Identifica a pessoa ou serviço buscando acesso a um recurso
+  - Solicita credenciais de acesso legítimo
+  - Base para criar princípios de identidade e controle de acesso seguros
+
+**Autorização:**
+  - Determina o nível de acesso de uma pessoa ou serviço autenticado
+  - Define quais dados eles podem acessar e o que podem fazer com eles
+
+**Autenticação multifator:**
+Fornece segurança adicional para as identidades, exigindo dois ou mais elementos para autenticação completa.
+
+Algo que você sabe <-> Algo que você possui <-> Algo que você é
+
+#### B2B do Microsoft Entra External ID
+(Parceiros, fornecedores, outros colaboradores) -> Convite ou inscrição para autoatendimento -> ID externa do Microsoft Entra
+
+#### B2C do Identidades Externas do Azure AD
+Azure AD B2C
+(Consumidores do seu aplicativo publicado) -> Fluxos dos usuários de inscrição e entrada, políticas personalizadas -> Azure AD B2C (Seu locatário do Azure AD B2C)
+
+### Acesso Condicional
+  - Associação de usuário ou grupo
+  - Local do IP
+  - Dispositivo
+  - Aplicativo
+  - Detecção de risco
+
+#### Controle de aceso baseado em função (Role Based Access Control - RBAC)
+  - Gerenciamento de acesso de granularidade fina (Acesso de acordo com a necessidade)
+  - Divida as tarefas dentro da equipe e conceda somente a quantidade de acesso de que os usuários precisam para trabalhar (Somente naquilo que faz sentido)
+  - Habilite o acesso ao portal do Azure e o controle de acesso aos recursos
+
+#### Confiança Zero
+  - Modelo que pressupõe sempre o pior cenário
+  - Proteja os ativos onde eles estiverem com a Confiança Zero
+  - Proteção completa:
+    1. Segurança física: Proteger o datacenter
+    2. Identidade e acesso: Acessos e Usuários
+    3. Perímetro: Por exemplo: Ataque de DDOS
+    4. Rede: Garantir a segmentação e a limitação de comunicações entre as redes reais
+    5. Computação: Máquinas Virtuais
+    6. Aplicativo: Tanto aplicações quanto da cloud, se elas estão livres de vulnerabilidades
+    7. Dados: Controla todo o acesso dos dados corporativos e dos clientes, se for o caso
+  - Uma abordagem em camadas para proteger sistemas de computador
+  - Fornece vários níveis de proteção
+  - Ataques contra uma camada são isolados das camadas subsequentes
+
+#### Microsoft Defender para Nuvem
+  - O Microsoft Defender para Nuvem é um serviço de monitoramento que fornece proteção contra ameaças nos datacenters do Azure e locais.
+  - Também faz a comunicação para o ambiente da AWS e do GCP.
+  - Tráz estratégias de remediação e correção dos problemas que ele identifica.
+  - Trial - 30 dias de versão para validação
+  - É possível ativar determinadas camadas apenas, para o que faz sentido para o sistema
+
+#### Recursos do Azure
+  - Fornece recomendações de segurança
+  - Detectar e bloquear malware
+  - Analisar e identificar ataques potenciais
+  - Controle de acesso just-in-time para portas
+
+### Laboratório
+
+
+
+
+
+
+
+
