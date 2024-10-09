@@ -439,11 +439,18 @@ Azure AD B2C
   - Controle de acesso just-in-time para portas
 
 ### Laboratório
-
-
-
-
-
-
-
-
+  - Microsoft Entra ID (Antigo Microsoft Active Directory): (Para as mesmas autenticações na Cloud e no On-Premise: Sincronização de contas do on-Premise -> Cloud. O processo inverso não ocorre.)
+    1. Roles and administrators: Este permissionamento está relacionado com a conta de outra pessoa. Se atentar com as diferenças com o RBAC.
+    2. Users: Users are permanently deleted automatically 30 days after they are deleted.
+    3. Self-service Password Reset
+    4. Possibilidade de criar um usuário novo ou convidar um externo
+    5. Opções de convites em grande escala (bulk invite)
+    6. Permissionamento é herdável
+    7. É possível dar permissão direto no serviço
+  - Microsoft Defender for Cloud:
+    1. "Termômetro"
+    2. Análise de postura de segurança dizendo o quão bom ou ruim estamos.
+    3. Cloud Native
+    4. Algumas funcionalidades chave liberadas
+    5. Funciona para outras Cloud Providers
+    6. DevOps Security: É possível conectar a conta do AzureDevOps, GitHub e GitLab. E realiza a validação das ações.
