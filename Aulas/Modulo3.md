@@ -91,8 +91,67 @@ Video 5 - Gerenciamento de Custos - Revisão -> Vídeo duplicado de Marcas (Tags
     4. Policy: Permite criar políticas para padronizar e "forçar" o uso das Tags.
    
 -------------------
+# Governança e Conformidade
+## Roteiro de Aprendizagem
+**Governança e Conformidade**
+  - Blueprints, políticas e bloqueios de recursos
+  - Portal de Confiança do Serviço
 
+**Computação em nuvem: Domínio do objetivo**
+   - Descrever a finalidade do Azure Policy;
+   - Descrever a finalidade dos bloqueios de recurso;
+   - Descrever a finalidade do Portal de Confiança do Serviço;
+   - Descrever a finalidade do Microsoft Purview
 
+## Blueprints, Políticas e Bloqueios de Recurso
+**Azure Policy**
+  O Azure Policy ajuda a impor padrões organizacionais e a avaliar a conformidade em escala.
+  Ele fornece governança e consistência de recursos com conformidade regulatória, segurança, custo e gerenciamento.
+  - Restringe a criação de recursos bloqueados independente do nível do funcionário na organização.
+  - Avalia e identifica os recursos do Azure que não atendem às suas políticas.
+  - Fornece definições de políticas e iniciativas integradas, em categorias como armazenamento, rede, computação, central de segurança e monitoramento.
+  - Non-Compliant: Recursos criados anteriormente a Policy. A Policy não altera automaticamente o recurso.
+  - Remediation: Alteração de status em determinadas características ou recursos, para cumprir com a Policy. Usar com parcimônia.
+  - Compliant: Está de acordo com a Policy e tudo está funcionando como planejado.
+  - Padronização dos Recursos.
+
+## Gerenciando Bloqueios de Recursos
+  - Proteja os recursos do Azure de exclusão ou modificação acidental.
+  - Gerenciar bloqueios na assinatura, grupo de recursos ou níveis de recursos individuais dentro do Portal do Azure.
+  - Bloqueios são herdáveis, ao contrário das Tags.
+
+**Bloqueios de recursos:**
+|Tipos de Bloqueio|Ler|Atualizar|Excluir|
+|----|----|----|----|
+|Excluir | Sim | Sim | Não |
+|ReadOnly | Sim | Não | Não |
+
+  - O menor nível de Bloqueio sempre será o de **Excluir**
+
+## Portal de Confiança do Serviço
+   - Todas as regras que a Microsoft segue.
+   - Onde a Microsoft publica todos os Documentos relacionados a seus serviços e leis.
+
+**Microsoft Purview**
+O Microsoft Purview é uma família de soluções de governança, risco e conformidade de dados que ajuda você a obter uma única exibição unificada em seus dados. O Microsoft Purview reúne insights sobre seus dados locais, multinuvem e de software como serviço.
+  - Não pode ser classificado como segurança, gerencia a governança.
+  - Descoberta de dados automatizada
+  - Classificação de dados confidenciais
+  - Linhagem de dados de ponta a ponta
+
+## Laboratório:
+  Portal de Confiança do Serviço:
+  - Certificações, regulamentos e padrões;
+  - Relatórios, white papers e artefatos;
+  - Recursos regionais e do setor;
+    1. Recursos financeiros;
+       - Lista regulamentos de vários países em que atua.
+  Azure:
+  - Locks: Bloqueio a nível de resource Group.
+    1. Bloqueios são herdáveis, mas se o recurso for movido, o Bloqueio não vai junto.
+  - Microsoft Purview: Criar conta
+    1. É como se fosse uma suit de aplicações;
+    2. Policy: É uma forma de padronização;
 
 
 
