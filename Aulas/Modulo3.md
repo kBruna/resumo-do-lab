@@ -153,6 +153,63 @@ O Microsoft Purview é uma família de soluções de governança, risco e confor
     1. É como se fosse uma suit de aplicações;
     2. Policy: É uma forma de padronização;
 
+--------------------
+# Ferramentas de Implantação de Recursos
+**Roteiro de Aprendizagem**
+Ferramentas de implantação de recursos
+  - Portal, PowerShell, CLI e outras
+  - Azure Arc e Azure Resource Manager
+
+**Domínio de objetivo**
+  - Descrever o portal do Azure
+  - Descrever o Azure Cloud Shell, incluindo o CLI do Azure e o Azure PowerShell
+  - Descrever a finalidade do Azure Arc
+  - Descrever o ARM (Azure Resource Manager) e modelos do ARM do Azure.
+
+## Ferramentas para interagir com o Azure
+  - Portal do Azure
+  - Azure PowerShell
+  - Azure Cloud Shell
+  - Interface de Linha de Comando (CLI)
+
+## Azure Arc
+  - Clientes
+  - Ferramentas e experiências: Azure Portal, Power Shell, Azure CLI
+  - Azure Resource Manager:
+    1. Painel único de gerenciamento
+    2. Práticas nativas de nuvem
+    3. Controle de acesso baseado em função
+    4. Segurança e Conformidade
+  - Azure Arc (Extensão do gerenciamento do Azure para (local, várias nuvens e borda):
+    1. Recursos em outros locais
+    2. Ferramentas de gerenciamento local
+
+## Azure Resource Manager
+O **ARM (Azure Resource Manager)** fornece uma camada de gerenciamento que permite criar, atualizar e excluir recursos na assinatura do Azure.
+
+### Infraestrutura como Código
+  - Garanta consistência na implantação em todo o ecossistema de nuvem
+  - Gerencie a configuração em escala
+  - Provisione rapidamente ambientes adicionais com base em uma configuração e um build padrão
+
+### Modelos do ARM (Azure Resource Manager)
+Os modelos do **Arm (Azure Resource Manager)** são arquivos JSON (JavaScript Objecto Notation) que podem ser usados para criar e implantar a infraestrutura do Azure sem a necessidade de escrever comandos de programação.
+  - Sintaxe declarativa
+  - Resultados repetíveis
+  - Orquestração
+  - Arquivos Modulares
+  - Validação integrada
+  - Código exportável
+
+**Azure Bicep (?)**
+  - Compatível apenas com a Cloud Microsoft
+
+## Laboratório
+Cloud Shell:
+  - Azure CLI
+  - Cloud Shell
+
+
 
 
 
