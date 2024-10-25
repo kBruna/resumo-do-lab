@@ -241,10 +241,3 @@ A **Integridade do Serviço** do Azure é uma coleção de serviços que mantêm
 
 ## Azure Monitor
 O **Azure Monitor** maximiza a disponibilidade e o desempenho de aplicativos e serviços coletando, analisando e tomando decisões com base na telemetria da nuvem e de ambientes locais.
-
-## Laboratório
-
-
-
-
-
