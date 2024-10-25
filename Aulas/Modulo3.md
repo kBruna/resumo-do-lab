@@ -211,13 +211,13 @@ Cloud Shell:
 
 ----------------------
 
-#Ferramentas de Monitoramento
+# Ferramentas de Monitoramento
 **Roteiro de Aprendizagem**
   - Assistente do Azure
   - Integridade do Serviço do Azure
   - Azure Monitor
 
-Domínio do Objetivo
+**Domínio do Objetivo**
   - Descrever a finalidade do Assistente do Azure
   - Descrever a integridade do Serviço do Azure
   - Descrever o Azure Monitor, incluindo Azure Log Analytics, Alertas do Azure Monitor e Application Insights.
